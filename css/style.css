@@ -126,6 +126,21 @@ p{
     background-color:#93cb52;
 }
 
+.toggle-button{
+    position:absolute;
+    top: .7rem;
+    right: 1rem;
+    color: white;
+    font-size: 2rem;
+    padding: 0 1rem;
+    display:none;
+}
+
+.toggle-button:hover{
+    background-color: #7ab436;
+}
+
+
 /*Header Showcase*/
 
 #showcase{

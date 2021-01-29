@@ -1,3 +1,5 @@
+const toggleButton = document.getElementsByClassName('toggle-button')[0]
+const navbarLinks = document.getElementsByClassName('nav-links')[0]
 // Smooth Scrolling
 $('#navbar a, .btn').on('click', function(event) {
     if (this.hash !== '') {
@@ -13,3 +15,11 @@ $('#navbar a, .btn').on('click', function(event) {
       );
     }
   });
+
+
+// hamburguer menu
+
+toggleButton.addEventListener('click', (e)=>{
+  e.preventDefault()
+  navbarLinks.classList.toggle('active')
+})

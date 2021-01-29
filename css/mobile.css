@@ -21,18 +21,43 @@
  @media(max-width:500px){
 
     #navbar{
-        flex-direction:column;
-        align-items: center;
+        flex-direction: column;
+        align-items: flex-start;
+       
     }
     #navbar .logo{
-        margin-bottom: 1rem;
+        margin-bottom: .5rem;
+        margin-left: 2rem;
     }
 
-    #navbar ul{
-        padding: 0.5rem;
+    .nav-links{
+        width:100%;
+        display:none;
+      
+    }
+    #navbar ul {
+        display:block;
+        width: 100%;
+        text-align:center;
+        
+    }
+
+    #navbar ul li{
+        width: 100%;
     }
 
 
+    #navbar ul li a{
+        display:block;
+        padding: 1.5rem 0;
+        width:100%;
+        border-bottom: #444 dotted 1px;
+    }
+     
+    .nav-links.active{
+        display: flex;
+        
+    }
     #complejo{
         display:block;
     }
@@ -48,6 +73,10 @@
   
      #contact .map{
        display: none;
+    }
+
+    .toggle-button{
+        display:block;
     }
     
 }
