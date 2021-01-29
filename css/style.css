@@ -84,6 +84,10 @@ p{
     color:#fff;
 }
 
+.bg-primary{
+    background:#7ab436;
+    color: #fff;
+}
 
 .text-center{
     text-align:center;
@@ -189,7 +193,7 @@ p{
 }
 
 #complejo .complejo-img{
-    background: #ccc url('https://source.unsplash.com/collection/1400967') no-repeat center center/cover;
+    background: #ccc url('https://source.unsplash.com/random') no-repeat center center/cover;
 }
 
 .list{
@@ -219,4 +223,39 @@ p{
 #servicios .item{
     
     color:rgb(53, 53, 53);
+}
+
+
+
+/*Section Contact*/
+
+#contact{
+    display:flex;
+    
+}
+#contact .map{
+    flex:1;
+}
+ #contact .contact-form{
+ flex:1;
+}
+
+#contact .contact-form .form-group{
+    margin:0.75rem;
+}
+
+
+#contact .contact-form label{
+    display:block;
+}
+
+#contact .contact-form input, #contact .contact-form textarea{
+    padding: 1rem;
+    width:100%;
+    border:none;
+}
+
+#contact .map{
+    background: #333 url('https://source.unsplash.com/daily') no-repeat center center/cover;
+    padding: 2rem;
 }

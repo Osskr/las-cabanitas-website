@@ -6,9 +6,11 @@
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
      <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
-     <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width:768px)">
+    <link rel="stylesheet" href="css/style.css">
+    
      <link rel="stylesheet" href="css/widescreen.css" media="screen and (min-width:1100px)">
-     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width:768px)">
+    
      <title> Complejo Las Cabañitas </title>
  </head>
  <body id="home">
@@ -23,9 +25,9 @@
          <ul>
              <li><a href='#home'>Inicio</a></li>
              <li><a href='#cabanas'>Cabañas</a></li>
-             <li><a href='#info'>Información</a></li>
+             <li><a href='#complejo'>Información</a></li>
+             <li><a href='#servicios'>Servicios</a></li>
              <li><a href='#contact'>Contacto</a></li>
-             <li><a href='#rules'>Reglamento</a></li>
          </ul>  
      </nav>
 
@@ -42,19 +44,30 @@
      <section id="cabanas" class="bg-ligth py-1">
          <div class="container">
              <div class="items">
-                <div class="item text-center"><i class="fas fa-mountain fa-2x"></i></i>
+                <div class="item text-center"><i class="fas fa-mountain fa-2x"></i>
+                   
+                   <div>
                     <h3 class="text-center">La Cumbrecita</h3>
                     <p  class="text-justify">Nuestro pueblo peatonal "La Cumbrecita", se encuentra a 1450msnm, en un pequeño valle en las sierras Grandes de Cordoba.El resultado de años de arduo trabajo , de pobladores que dejaron el viejo continente, para fundar este maravilloso lugar. Con añosos bosques arroyos de agua cristalina con sus cascadas, sus típicas construcciones alpinas, y sus senderos que invitan a pasear.</p>
+
+                   </div>
+                 
                 </div>
-                <div class="item text-center"><i class="fas fa-campground fa-2x"></i></i>
-                    <h3 class="text-center">Nuestras Cabañas</h3>
+                <div class="item text-center"><i class="fas fa-campground fa-2x"></i>
+                  <div>
+                      <h3 class="text-center">Nuestras Cabañas</h3>
                     <p class='text-justify'>Complejo de cabañas de troncos (Estilo posada) Ubicadas en el casco histórico de "La Cumbrecita" entre la capilla y  el balneario natural "la Olla" (con acceso directo al rio desde nuestro parque).Vista única y directa al Cerro Wank A  20 minutos de la cascada grande.  y  a 500mts del centro 
                     </p>
+                </div>  
                 </div>
-                <div class="item text-center"><i class="fas fa-praying-hands fa-2x"></i></i>
-                    <h3 class="text-center">Vive el Ahora</h3>
+                <div class="item text-center"><i class="fas fa-praying-hands fa-2x"></i>
+
+                    <div>
+                        <h3 class="text-center">Vive el Ahora</h3>
                     <p class="text-justify">Vive el ahora Una filosofía asociada al ocio y al placer, la relajación y a la paz interior,ha llegado para quedarse y cambiar la forma de viajar de miles de turistas.Tomarse el tiempo para conectarse con la armonía interna de cada uno, y con el destino elegido .ar los murmullos de la naturaleza ,alejarse lo mas posible del frenesí de las ciudades y el consumo.Entrar en sintonía con la esencia del lugar.
                         </p>
+                    </div>
+                    
                 </div> 
 
              </div>
@@ -126,5 +139,41 @@
                 </div>
         </div>    
     </section>
+
+    <section id="contact">
+        <div class="contact-form bg-primary p-2">
+                <h2>Contacto</h2>
+                <p>Por favor use el formulario debajo para contactarnos</p>
+                <form action="">
+                    <div class="form-group">
+                        <label for="name">Nombre: </label>
+                        <input type="text" name="name" id="name" placeholder="Ingresar nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email de Contacto :</label>
+                        <input type="email" name="email" id="email" placeholder="Ingresar Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Numero de Telefono: </label>
+                        <input type="text" name="phone" id="phone" placeholder="Ingresar telefono">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje </label>
+                        <textarea type="text" name="message" id="message" placeholder="Ingresar Mensaje"></textarea>
+                    </div>
+
+                    <input type="submit" value="Enviar" class="btn-dark">
+                </form>
+        </div>
+        <div class="map"></div>
+    </section>
+    <footer id="main-footer" class="bg-dark text-center py-1">
+        <div class="container">
+            <p>Copyright &copy; 2021, Las Cabañitas Todos los derechos reservados</p>
+        </div>
+        
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
  </body>
  </html>
